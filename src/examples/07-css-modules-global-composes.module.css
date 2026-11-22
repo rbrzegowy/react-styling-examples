@@ -1,0 +1,15 @@
+.root {
+  padding: 12px;
+  border: 1px dotted #aaa;
+}
+.base {
+  padding: 12px;
+  border-radius: 8px;
+  border: 0;
+}
+.primary {
+  /* composes - użyj */
+  composes: base;
+  background: #195e75;
+  color: white;
+}

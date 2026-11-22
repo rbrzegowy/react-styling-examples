@@ -1,0 +1,24 @@
+.theme-demo {
+  --demo-bg: #fff;
+  --demo-text: #0f172a;
+  --demo-primary: #195e75;
+}
+.theme-demo[data-demo-theme='dark'] {
+  --demo-bg: #0f172a;
+  --demo-text: #f8fafc;
+  --demo-primary: #60a5fa;
+}
+.theme-demo__card {
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--demo-bg);
+  color: var(--demo-text);
+  border: 1px solid var(--demo-primary);
+}
+.theme-demo__card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  color: var(--demo-text);
+  border: 1px solid var(--demo-primary);
+  border-radius: 6px;
+}

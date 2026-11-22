@@ -1,0 +1,23 @@
+$radius: 8px;
+
+@mixin alert-colors($background, $foreground) {
+  background-color: $background;
+  color: $foreground;
+}
+
+.alert {
+  padding: 16px;
+  border-radius: $radius;
+
+  &__message {
+    font-weight: 500;
+  }
+
+  &--success {
+    @include alert-colors(#dcfce7, #166534);
+  }
+
+  &--error {
+    @include alert-colors(#fee2e2, #991b1b);
+  }
+}

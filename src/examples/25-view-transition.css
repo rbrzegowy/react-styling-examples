@@ -1,0 +1,11 @@
+::view-transition-new(.fade-in) {
+  animation-duration: 14000ms;
+}
+
+::view-transition-old(.fade-out) {
+  animation-duration: 12000ms;
+}
+
+::view-transition-group(.smooth-update) {
+  animation-duration: 16000ms;
+}

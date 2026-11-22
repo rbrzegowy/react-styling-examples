@@ -1,0 +1,47 @@
+#header {
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.primary {
+  background: #195e75;
+  color: white;
+}
+.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+.button:hover {
+  filter: brightness(0.9);
+}
+
+/* uwaga na selektory znaczników w modułach - pozostają globalne! */
+h1 {
+  /* font-size: 10px !important; */
+}
+
+/* uwaga na selektory złożone */
+/* pierwszy selektor zostanie enkapsulowany, dziecko już nie! */
+.button span {
+  color: #ccc;
+}
+/* enkapsuluje obydwa */
+.button .first {
+  color: #ccc;
+}
+
+/* Nadpisywanie styli globalnych */
+/* DO NOT! chyba że musisz;) */
+:global(body) {
+  /* background: red !important; */
+}
+.root :global(.external-widget) {
+  font-size: 14px;
+  color: #64748b;
+}

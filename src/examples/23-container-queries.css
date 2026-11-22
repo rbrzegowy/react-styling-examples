@@ -1,0 +1,31 @@
+.query-demo {
+  container-type: inline-size;
+  resize: horizontal;
+  overflow: auto;
+  width: 75%;
+  min-width: 240px;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px dashed #999;
+}
+.query-demo__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+  background: #eef2ff;
+  color: #0f172a;
+  border-radius: 8px;
+}
+.query-demo__image {
+  display: grid;
+  place-items: center;
+  background: #c7d2fe;
+  min-height: 80px;
+  min-width: 100px;
+}
+@container (min-width: 480px) {
+  .query-demo__card {
+    flex-direction: row;
+  }
+}

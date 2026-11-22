@@ -1,0 +1,23 @@
+@layer base, demo-components, demo-utilities;
+@layer base {
+  /* to warstwa definiowana przez tailwind, nadpisujemy w niej nasze style */
+  .layer-demo-button {
+    padding: 20px;
+    color: #fff;
+    border-radius: 6px;
+  }
+}
+@layer demo-utilities {
+  .layer-demo-button {
+    background: #ffc800;
+  }
+}
+@layer demo-components {
+  .layer-demo-button {
+    background: #00abe3;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 20px;
+  }
+}
